@@ -1,0 +1,12 @@
+name: canary
+# Started by cron.surf every 5 minutes; the run's start time shows how close to the minute it fired.
+on:
+  workflow_dispatch:
+  # cron.surf: */5 * * * *
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: echo "started at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
