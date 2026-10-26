@@ -1,5 +1,7 @@
 # cron-surf-canary
 
+English · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
+
 A public canary for [cron.surf](https://cron.surf/en/github) on-time triggers for GitHub Actions.
 
 This repository has one workflow, [`canary.yml`](.github/workflows/canary.yml). It has no `schedule:` trigger. It runs every five minutes because the cron.surf GitHub App reads one comment and dispatches it on time:
