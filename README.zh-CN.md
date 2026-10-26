@@ -2,6 +2,8 @@
 
 [English](README.md) · 简体中文 · [日本語](README.ja.md)
 
+[![on time](https://cron.surf/badge/keepryanl/cron-surf-canary/canary.yml.svg)](https://github.com/keepryanl/cron-surf-canary/actions/workflows/canary.yml)
+
 这是 [cron.surf](https://cron.surf/zh/github) 的公开金丝雀仓库，用来展示 GitHub Actions 准点运行的实际效果。
 
 仓库里只有一个工作流 [`canary.yml`](.github/workflows/canary.yml)。它没有 `schedule:` 触发，之所以每 5 分钟运行一次，是因为 cron.surf GitHub App 读取了下面这行注释，并按时启动它：

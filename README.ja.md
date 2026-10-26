@@ -2,6 +2,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · 日本語
 
+[![on time](https://cron.surf/badge/keepryanl/cron-surf-canary/canary.yml.svg)](https://github.com/keepryanl/cron-surf-canary/actions/workflows/canary.yml)
+
 [cron.surf](https://cron.surf/ja/github) の公開カナリアリポジトリです。GitHub Actions を定刻どおりに起動できているかを、そのまま見せるためのものです。
 
 ワークフローは [`canary.yml`](.github/workflows/canary.yml) の 1 つだけです。`schedule:` トリガーはありません。それでも 5 分ごとに動くのは、cron.surf GitHub App が次のコメントを読み取り、時刻どおりに起動しているからです。
